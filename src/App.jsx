@@ -5,7 +5,7 @@ export default function App() {
     <h1 className="text-xl">
       <Navbar />
       <section>
-        <div className="grid grid-rows-2 lg:grid-cols-2 gap-4 p-4">
+        <div className="grid grid-rows-2 lg:grid-rows-none lg:grid-cols-2 gap-4 p-4">
           <div className="text-white p-4 flex items-center justify-center flex-col h-[600px]">
             <h1 className="text-4xl font-bold">Augment Technology</h1>
             <h1 className="text-4xl font-bold">Advance Humanity</h1>
