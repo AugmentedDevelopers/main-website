@@ -10,6 +10,10 @@ export default {
         dancing: ["Satisfy"]
       },
       keyframes: {
+        float: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(1px)' },
+        },
         slidein: {
           from: {
             opacity: "0",
@@ -27,7 +31,8 @@ export default {
       },
       animation: {
         slideDown: 'slideDown 0.5s ease-out forwards',
-        slidein: "slidein 1s ease 300ms"
+        slidein: "slidein 1s ease 300ms",
+        float: 'float 2s ease-in-out infinite'
       },
     },
   },

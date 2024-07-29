@@ -10,20 +10,44 @@ export default function App() {
       <Navbar isOpen={isOpen} setIsOpen={setIsOpen} />
       <div
         onClick={() => setIsOpen(!isOpen)}
-        className={`z-10 items-end pr-6 lg:hidden fixed right-0 w-[170px] pt-24 text-xl space-y-12 bg-gray-200 opacity-90  min-h-screen ${
-          isOpen ? "flex flex-col animate-slideDown" : "hidden"
+        className={`z-10 items-end pr-6 lg:hidden fixed right-0 w-[170px] pt-24 text-xl space-y-12 bg-gray-200 opacity-90 min-h-screen ${
+          isOpen ? "flex flex-col" : "hidden"
         }`}
       >
-        <a className={`underline-animation w-fit`} href="#">
+        <a
+          className={`underline-animation w-fit ${
+            isOpen ? "animate-slideDown" : ""
+          }`}
+          href="#"
+          style={{ animationDelay: "0.05s" }}
+        >
           Home
         </a>
-        <a className="underline-animation w-fit" href="#">
+        <a
+          className={`underline-animation w-fit ${
+            isOpen ? "animate-slideDown" : ""
+          }`}
+          href="#"
+          style={{ animationDelay: "0.15s" }}
+        >
           About
         </a>
-        <a className="underline-animation w-fit" href="#">
+        <a
+          className={`underline-animation w-fit ${
+            isOpen ? "animate-slideDown" : ""
+          }`}
+          href="#"
+          style={{ animationDelay: "0.25s" }}
+        >
           Services
         </a>
-        <a className="underline-animation w-fit" href="#">
+        <a
+          className={`underline-animation w-fit ${
+            isOpen ? "animate-slideDown" : ""
+          }`}
+          href="#"
+          style={{ animationDelay: "0.35s" }}
+        >
           Contact Us
         </a>
       </div>
@@ -47,7 +71,7 @@ export default function App() {
               monitors are enabling early detection of diseases and continuous
               health monitoring, leading to better outcomes.
             </p>
-            <LearnMoreBtn/>
+            <LearnMoreBtn />
           </div>
           {/* place the latest products below */}
           <div className="p-4 h-full"></div>
