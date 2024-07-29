@@ -10,11 +10,11 @@ export default function App() {
       <Navbar isOpen={isOpen} setIsOpen={setIsOpen} />
       <div
         onClick={() => setIsOpen(!isOpen)}
-        className={`z-10 items-start md:items-center lg:hidden fixed w-full pt-24 text-xl space-y-12 px-1 bg-white min-h-screen ${
+        className={`z-10 items-end pr-6 lg:hidden fixed right-0 w-[170px] pt-24 text-xl space-y-12 bg-gray-200 opacity-90  min-h-screen ${
           isOpen ? "flex flex-col animate-slideDown" : "hidden"
         }`}
       >
-        <a className="underline-animation w-fit" href="#">
+        <a className={`underline-animation w-fit`} href="#">
           Home
         </a>
         <a className="underline-animation w-fit" href="#">
@@ -30,9 +30,9 @@ export default function App() {
       <main className="min-h-screen pt-[48px]">
         <section className="grid grid-rows-2 lg:grid-rows-none lg:grid-cols-2 gap-4 p-4 h-full">
           <div className="text-white p-4 flex items-center justify-center flex-col min-h-[600px] h-full">
-            <h1 className="text-4xl font-bold">Augment Technology</h1>
-            <h1 className="text-4xl font-bold">Advance Humanity</h1>
-            <p className="text-sm mt-8">
+            <h1 className="text-4xl font-bold animate-slidein text-gradient-opacity">Augment Technology</h1>
+            <h1 className="text-4xl font-bold animate-slidein text-gradient-opacity">Advance Humanity</h1>
+            <p className="text-sm mt-8 text-center animate-slidein">
               Augmented technology, encompassing fields such as augmented
               reality (AR), virtual reality (VR), artificial intelligence (AI),
               and wearable tech, is transforming the way humans interact with
