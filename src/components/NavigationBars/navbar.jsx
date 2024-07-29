@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import HamburgerBtn from "./hamburgerBtn";
+import HamburgerBtn from "./components/hamburgerBtn";
 
 const Navbar = ({ isOpen, setIsOpen }) => {
   return (
