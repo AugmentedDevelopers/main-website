@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+  scrollbar-width: none;
+}
+
 body {
     font-family: 'Montserrat', cursive;
     background-color: black;

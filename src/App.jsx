@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Navbar from "./components/navbar";
+import LearnMoreBtn from "./components/learnMoreBtn";
 
 export default function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -7,17 +8,26 @@ export default function App() {
   return (
     <>
       <Navbar isOpen={isOpen} setIsOpen={setIsOpen} />
+      <div
+        onClick={() => setIsOpen(!isOpen)}
+        className={`z-10 items-start md:items-center lg:hidden fixed w-full pt-24 text-xl space-y-12 px-1 bg-white min-h-screen ${
+          isOpen ? "flex flex-col animate-slideDown" : "hidden"
+        }`}
+      >
+        <a className="underline-animation w-fit" href="#">
+          Home
+        </a>
+        <a className="underline-animation w-fit" href="#">
+          About
+        </a>
+        <a className="underline-animation w-fit" href="#">
+          Services
+        </a>
+        <a className="underline-animation w-fit" href="#">
+          Contact Us
+        </a>
+      </div>
       <main className="min-h-screen pt-[48px]">
-        <div onClick={()=>setIsOpen(!isOpen)}
-          className={`z-30 items-start md:items-center lg:hidden absolute w-full pt-16 text-xl space-y-12 px-1 bg-white min-h-screen ${
-            isOpen ? "flex flex-col animate-slideDown" : "hidden"
-          }`}
-        >
-          <a className="underline-animation w-fit" href="#">Home</a>
-          <a className="underline-animation w-fit" href="#">About</a>
-          <a className="underline-animation w-fit" href="#">Services</a>
-          <a className="underline-animation w-fit" href="#">Contact Us</a>
-        </div>
         <section className="grid grid-rows-2 lg:grid-rows-none lg:grid-cols-2 gap-4 p-4 h-full">
           <div className="text-white p-4 flex items-center justify-center flex-col min-h-[600px] h-full">
             <h1 className="text-4xl font-bold">Augment Technology</h1>
@@ -37,9 +47,7 @@ export default function App() {
               monitors are enabling early detection of diseases and continuous
               health monitoring, leading to better outcomes.
             </p>
-            <button className="border-2 border-white p-3 mt-8">
-              Learn More
-            </button>
+            <LearnMoreBtn/>
           </div>
           {/* place the latest products below */}
           <div className="p-4 h-full"></div>
