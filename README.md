@@ -1,8 +1,19 @@
-# React + Vite
+# Augmented Labs
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Steps to Run the Website Locally
 
-Currently, two official plugins are available:
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/AugmentedDevelopers/main-website
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+2. **Move to the directory**
+   ```bash
+   cd main-website
+
+3. **Install packages**
+   ```bash
+   npm install
+
+4. **Run server locally in dev mode**
+   ```bash
+   npm run dev
