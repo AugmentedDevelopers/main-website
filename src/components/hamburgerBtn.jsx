@@ -1,6 +1,12 @@
-const HamburgerBtn = () => {
+const HamburgerBtn = ({ setIsOpen,isOpen }) => {
   return (
-    <div className="lg:hidden flex items-center">
+    <div
+      onClick={() => {
+        setIsOpen(!isOpen)
+        console.log(isOpen)
+      }}
+      className="lg:hidden flex items-center"
+    >
       <button className="text-black">
         <svg
           className="w-6 h-6"
