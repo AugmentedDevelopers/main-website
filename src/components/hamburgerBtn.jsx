@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const HamburgerBtn = ({ setIsOpen, isOpen }) => {
   return (
@@ -7,7 +7,7 @@ const HamburgerBtn = ({ setIsOpen, isOpen }) => {
         setIsOpen(!isOpen);
         console.log(isOpen);
       }}
-      className={`lg:hidden flex items-center ${isOpen ? 'open' : ''}`}
+      className={`lg:hidden flex items-center ${isOpen ? "open" : ""}`}
     >
       <button className="text-black hamburger-btn">
         <svg

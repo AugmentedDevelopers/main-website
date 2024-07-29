@@ -54,8 +54,12 @@ export default function App() {
       <main className="min-h-screen pt-[48px]">
         <section className="grid grid-rows-2 lg:grid-rows-none lg:grid-cols-2 gap-4 p-4 h-full">
           <div className="text-white p-4 flex items-center justify-center flex-col min-h-[600px] h-full">
-            <h1 className="text-4xl font-bold animate-slidein text-gradient-opacity">Augment Technology</h1>
-            <h1 className="text-4xl font-bold animate-slidein text-gradient-opacity">Advance Humanity</h1>
+            <h1 className="text-4xl font-bold animate-slidein text-gradient-opacity">
+              Augment Technology
+            </h1>
+            <h1 className="text-4xl font-bold animate-slidein text-gradient-opacity">
+              Advance Humanity
+            </h1>
             <p className="text-sm mt-8 text-center animate-slidein">
               Augmented technology, encompassing fields such as augmented
               reality (AR), virtual reality (VR), artificial intelligence (AI),
