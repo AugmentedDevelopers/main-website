@@ -3,6 +3,7 @@ import * as THREE from 'three';
 
 const LatestProduct = () => {
   const containerRef = useRef(null);
+  let scale = 0.28
 
   useEffect(() => {
     const container = containerRef.current;
@@ -15,7 +16,13 @@ const LatestProduct = () => {
 
     const scene = new THREE.Scene();
 
-    const geometry = new THREE.BoxGeometry(0.45, 0.45, 0.45);
+    if(width < 400) 
+      scale = 0.28
+    else 
+      scale = 0.4
+
+
+    const geometry = new THREE.BoxGeometry(scale, scale, scale);
     const material = new THREE.MeshNormalMaterial();
 
     const mesh = new THREE.Mesh(geometry, material);

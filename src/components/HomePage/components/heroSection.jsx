@@ -3,10 +3,10 @@ import LearnMoreBtn from "./learnMoreBtn";
 const HeroSection = () => {
   return (
     <div className="text-white p-4 flex items-center justify-center flex-col min-h-[600px] h-full">
-      <h1 className="text-3xl md:text-4xl font-bold animate-slidein text-gradient-opacity">
+      <h1 className="text-2xl md:text-4xl font-bold animate-slidein text-gradient-opacity">
         Augment Technology
       </h1>
-      <h1 className="text-3xl md:text-4xl font-bold animate-slidein text-gradient-opacity">
+      <h1 className="text-2xl md:text-4xl font-bold animate-slidein text-gradient-opacity">
         Advance Humanity
       </h1>
       <p className="text-sm mt-8 text-center animate-slidein">
