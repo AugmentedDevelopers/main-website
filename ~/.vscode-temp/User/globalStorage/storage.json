@@ -1,0 +1,35 @@
+{
+    "userDataProfilesMigration": true,
+    "profileAssociations": {
+        "workspaces": {},
+        "emptyWindows": {
+            "1724743183711": "__default__profile__"
+        }
+    },
+    "profileAssociationsMigration": true,
+    "telemetry.sqmId": "",
+    "telemetry.machineId": "fafe052bd3b0e377adf800b6518b8aca59ab39ff426f0abd37f4a8749c90dd6e",
+    "telemetry.devDeviceId": "f69173a3-5da3-478f-aae8-dc95933421f0",
+    "backupWorkspaces": {
+        "workspaces": [],
+        "folders": [],
+        "emptyWindows": [
+            {
+                "backupFolder": "1724743183711"
+            }
+        ]
+    },
+    "windowsState": {
+        "lastActiveWindow": {
+            "backupPath": "/home/vineeth/Desktop/code/augmentedLabs/main-website/~/.vscode-temp/Backups/1724743183711",
+            "uiState": {
+                "mode": 1,
+                "x": 2368,
+                "y": 231,
+                "width": 1024,
+                "height": 768
+            }
+        },
+        "openedWindows": []
+    }
+}

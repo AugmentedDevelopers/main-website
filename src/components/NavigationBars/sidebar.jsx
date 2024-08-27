@@ -15,12 +15,12 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
         Home
       </a>
       <a
-        className={`underline-animation w-fit delay-100 ${
+        className={`underline-animation w-fit delay-50 ${
           isOpen ? "animate-slideDown" : ""
         }`}
         href="#"
       >
-        About
+        Blogs
       </a>
       <a
         className={`underline-animation w-fit delay-150 ${
@@ -30,6 +30,14 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
         style={{ animationDelay: "0.25s" }}
       >
         Services
+      </a>
+      <a
+        className={`underline-animation w-fit delay-100 ${
+          isOpen ? "animate-slideDown" : ""
+        }`}
+        href="#"
+      >
+        About
       </a>
       <a
         className={`underline-animation w-fit delay-200 ${

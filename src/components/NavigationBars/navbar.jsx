@@ -9,9 +9,10 @@ const Navbar = ({ isOpen, setIsOpen }) => {
       </div>
       <HamburgerBtn setIsOpen={setIsOpen} isOpen={isOpen} />
       <ul className="hidden lg:flex justify-between items-center w-3/4 font-medium">
-        <li className="cursor-pointer underline-animation">Home</li>
-        <li className="cursor-pointer underline-animation">About</li>
+      <li className="cursor-pointer underline-animation">Home</li>
+      <li className="cursor-pointer underline-animation">Blogs</li>
         <li className="cursor-pointer underline-animation">Services</li>
+        <li className="cursor-pointer underline-animation">About</li>
         <li className="cursor-pointer underline-animation">Contact Us</li>
       </ul>
     </nav>
