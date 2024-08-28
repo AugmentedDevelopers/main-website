@@ -1,4 +1,4 @@
-const Sidebar = ({ isOpen, setIsOpen }) => {
+const Sidebar = ({ isOpen, setIsOpen, setPage}) => {
   return (
     <div
       onClick={() => setIsOpen(!isOpen)}
@@ -11,6 +11,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
           isOpen ? "animate-slideDown" : ""
         }`}
         href="#"
+        onClick={()=>{setPage(0)}}
       >
         Home
       </a>
@@ -19,6 +20,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
           isOpen ? "animate-slideDown" : ""
         }`}
         href="#"
+        onClick={()=>{setPage(1)}}
       >
         Blogs
       </a>
@@ -27,6 +29,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
           isOpen ? "animate-slideDown" : ""
         }`}
         href="#"
+        onClick={()=>{setPage(2)}}
         style={{ animationDelay: "0.25s" }}
       >
         Services
@@ -36,6 +39,8 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
           isOpen ? "animate-slideDown" : ""
         }`}
         href="#"
+        onClick={()=>{setPage(3)}}
+        style={{ animationDelay: "0.35s" }}
       >
         About
       </a>
@@ -44,7 +49,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
           isOpen ? "animate-slideDown" : ""
         }`}
         href="#"
-        style={{ animationDelay: "0.35s" }}
+        onClick={()=>{setPage(4)}}
       >
         Contact Us
       </a>
