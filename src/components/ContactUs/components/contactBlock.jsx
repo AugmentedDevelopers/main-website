@@ -2,7 +2,7 @@ import React from "react";
 let overall={
     height:'20vh',
     color:'white',
-    fontSize:'1.5em',
+    fontSize:'1rem',
     padding:'2em',
     display:'flex',
     justifyContent:'center',
