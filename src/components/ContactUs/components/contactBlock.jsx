@@ -3,11 +3,14 @@ let overall={
     height:'20vh',
     color:'white',
     fontSize:'1rem',
-    padding:'2em',
+    padding:'0em 2em',
+    margin:'0.5em 1em',
     display:'flex',
     justifyContent:'center',
     alignItems:'center',
-    flexDirection:'column'
+    flexDirection:'column',
+    border:'solid rgba(255,255,255,0.05) 0.5px',
+    borderRadius:'0.2em'
 };
 function contactBlock({img, text,buttonText,action}){
     return (

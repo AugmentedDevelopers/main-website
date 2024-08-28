@@ -2,8 +2,8 @@ import { useState } from "react";
 import HomePage from "./components/HomePage/page";
 import Navbar from "./components/NavigationBars/navbar";
 import Sidebar from "./components/NavigationBars/sidebar";
-import ContactUs from "./components/ContactUs/ContactUS";
-import Blogs from "./components/Blogs/page";
+import ContactUs from "./components/ContactUs/page";
+import Blogs from "./components/Blogs/BlogList";
 import About from "./components/About/page";
 import Services from "./components/Services/page";
 let renderPage=(page)=>{
@@ -25,10 +25,12 @@ export default function App() {
   const [page,setPage]=useState(0);
   return (
     <>
-    <div style={{display:'flex', flexDirection:'column',justifyContent:'center'}}>
+    <div style={{display:'flex', flexDirection:'column',justifyContent:'center',width:'100%'}}>
       <Navbar isOpen={isOpen} setIsOpen={setIsOpen} setPage={setPage}/>
       <Sidebar isOpen={isOpen} setIsOpen={setIsOpen} setPage={setPage}/>
-      {renderPage(page)}
+      <div style={{ marginTop: '30px' }}>
+        {renderPage(page)}
+      </div>
     </div>
     </>    
   );
