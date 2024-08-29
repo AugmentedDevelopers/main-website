@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import HamburgerBtn from "./components/hamburgerBtn";
+import { Link,Outlet } from 'react-router-dom';
 
 const Navbar = ({ isOpen, setIsOpen, setPage}) => {
   return (
@@ -9,24 +10,14 @@ const Navbar = ({ isOpen, setIsOpen, setPage}) => {
       </div>
       <HamburgerBtn setIsOpen={setIsOpen} isOpen={isOpen} />
       <ul className="hidden lg:flex justify-between items-center w-3/4 font-medium">
-      <li className="cursor-pointer underline-animation" onClick={()=>{
-        setPage(0)
-      }}>Home</li>
-      <li className="cursor-pointer underline-animation" onClick={()=>{
-        setPage(1)
-      }}>Blogs</li>
-        <li className="cursor-pointer underline-animation" onClick={()=>{
-        setPage(2)
-      }}>Services</li>
-        <li className="cursor-pointer underline-animation"
-        onClick={()=>{
-          setPage(3)
-        }}>About</li>
-        <li className="cursor-pointer underline-animation"
-        onClick={()=>{
-          setPage(4)
-        }}>Contact Us</li>
+        <li className="cursor-pointer underline-animation" >
+        <Link to="/">Home</Link></li>
+        <li className="cursor-pointer underline-animation" ><Link to="/blogs">Blogs</Link></li> 
+        <li className="cursor-pointer underline-animation"><Link to="/services">Services</Link></li> 
+        <li className="cursor-pointer underline-animation"><Link to="/about">About</Link></li> 
+        <li className="cursor-pointer underline-animation"><Link to="/contact">Contact Us</Link></li> 
       </ul>
+      <Outlet/>
     </nav>
   );
 };
