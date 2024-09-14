@@ -7,21 +7,24 @@ const Services = () => {
             display: 'flex', 
             flexDirection: 'column', 
             alignItems: 'center',
-            justifyContent: 'center',
+            marginTop: '25px',
+            justifyContent: 'flex-start',
             backgroundColor: '#000', 
-            padding: '20px',
+            padding: '2em',
             gap: '20px',
             minHeight: '100vh',
             color: '#fff'
         }}>
+            
             <h1 style={{ 
-                fontSize: '3em', 
-                marginBottom: '1em', 
-                color: '#fff', 
-                textAlign: 'center',
-                paddingTop:'2em'
+                width: '100%', // Ensure the title takes the full width of the container
+                textAlign: 'center', 
+                fontSize: '2.5em', 
+                marginBottom: '1.5em', 
+                color: '#FFF' ,
+                marginTop:'1em'
             }}>
-                Services We Offer
+                Services Offered
             </h1>
             <div style={{ 
                 display: 'flex', 
