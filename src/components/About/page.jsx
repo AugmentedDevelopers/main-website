@@ -11,8 +11,19 @@ const About = () => {
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
+            marginTop:'25px',
+            padding:'2em'
         }}>
-            <h1 style={{ fontSize: '3em', marginBottom: '1em', color: '#fff' }}>About Us</h1>
+        <h1 style={{ 
+            width: '100%', // Ensure the title takes the full width of the container
+            textAlign: 'center', 
+            fontSize: '2.5em', 
+            marginBottom: '1.5em', 
+            color: '#FFF' ,
+            marginTop:'1em'
+        }}>
+            About Us
+        </h1>
             <p style={{ fontSize: '1.2em', maxWidth: '800px', marginBottom: '2em' }}>
                 At Augmented Labs, our mission is to merge the realms of imagination and technology to create cutting-edge products that enhance everyday life. We believe in the power of innovation, driven by a passion for technology and a commitment to excellence. Our goal is to empower people with the tools they need to build a better future.
             </p>
