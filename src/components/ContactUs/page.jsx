@@ -15,7 +15,7 @@ let ContactUs = () => {
             color: 'white',
             padding: '1em'
         }}>
-            <div style={{
+            <div className="mt-64 sm: mt-0" style={{
                 display: 'flex',
                 flexDirection: 'column',
                 border: 'solid 1px rgba(255,255,255,0.05)',
@@ -27,17 +27,17 @@ let ContactUs = () => {
                 padding: '5em 2em',
                 width: '100%',
                 maxWidth: '800px',
+                paddingTop:'3em'
             }}>
-                <h1 style={{
-                    fontSize: window.innerWidth <= 600 ? '2em' : '3em',
-                    textAlign: 'center'
-                }}>GENERIC STATEMENT</h1>
-                <div style={{
-                    display: 'flex',
-                    flexDirection: window.innerWidth <= 800 ? 'column' : 'row',
+                <h1 className="text-4xl md:text-4xl " style={{
+                    textAlign: 'center',
+                    marginTop:'0em',
+                    marginBottom:'1em',
+                }}>Augment your experience<br/><br/>Connect with Us</h1>
+                <div className="flex flex-col md:flex-row"style={{
                     alignItems: 'center',
                     justifyContent: 'center',
-                    width: '100%'
+                    width: '100%',
                 }}>
                     <ContactBlock 
                         img={whatsapp} 

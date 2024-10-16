@@ -5,7 +5,7 @@ const ContactUs = () => {
     <div className="flex flex-col items-center justify-center min-h-screen p-4 bg-black">
       <h1 className="text-4xl font-bold text-white mb-8">Contact Us</h1>
       
-      <div className="flex flex-col md:flex-row justify-center gap-6 w-full max-w-4xl">
+      <div className="flex flex-col sm:flex-row justify-center gap-6 w-full max-w-4xl">
         
         
         <div className="flex flex-col items-center bg-white p-6 rounded-lg shadow-md w-full md:w-1/3">

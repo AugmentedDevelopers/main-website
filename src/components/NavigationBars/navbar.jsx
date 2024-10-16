@@ -9,13 +9,12 @@ const Navbar = ({ isOpen, setIsOpen, setPage}) => {
         Augmented Labs
       </div>
       <HamburgerBtn setIsOpen={setIsOpen} isOpen={isOpen} />
-      <ul className="hidden lg:flex justify-between items-center w-3/4 font-medium">
-        <li className="cursor-pointer underline-animation" >
-        <Link to="/">Home</Link></li>
+      <ul className="hidden lg:flex justify-between items-center w-3/4 font-medium" style={{color:'black'}}>
+        <li className="cursor-pointer underline-animation" ><Link to="/">Home</Link></li>
         <li className="cursor-pointer underline-animation" ><Link to="/blogs">Blogs</Link></li> 
         <li className="cursor-pointer underline-animation"><Link to="/services">Services</Link></li> 
-        <li className="cursor-pointer underline-animation"><Link to="/about">About</Link></li> 
         <li className="cursor-pointer underline-animation"><Link to="/contact">Contact Us</Link></li> 
+        <li className="cursor-pointer underline-animation"><Link to="/about">About</Link></li> 
       </ul>
       <Outlet/>
     </nav>

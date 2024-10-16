@@ -29,9 +29,9 @@ export default function App() {
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />
             <Route path="/contact" element={<ContactUs />} />
+            <Route path="/blogs/Filament-Recycler" element={<BlogPost />} />
             <Route path="/blogs" element={<Blogs />} />
-            <Route path="/blogs/the-future-of-3d-printing" element={<BlogPost />} />
-          </Routes>
+             </Routes>
         </div>
       </Router>
     </div>

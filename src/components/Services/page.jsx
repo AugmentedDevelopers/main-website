@@ -1,17 +1,8 @@
 import React, { useState } from 'react';
 import Block from './components/Block';
-
 const Services = () => {
     const [bgImage, setBgImage] = useState('');
 
-    const handleMouseEnter = (imageUrl) => {
-        setBgImage(`url(${imageUrl})`);
-    };
-
-    const handleMouseLeave = () => {
-        setBgImage(''); // Optionally set to a default image or leave blank
-    };
-    
     return (
         <div 
             style={{ 
@@ -29,6 +20,7 @@ const Services = () => {
                 backgroundSize: 'cover',
                 backgroundPosition: 'center'
             }}>
+
             <h1 style={{ 
                 width: '100%', // Ensure the title takes the full width of the container
                 textAlign: 'center', 
@@ -50,23 +42,20 @@ const Services = () => {
                 <Block 
                     heading="3D PRINTING" 
                     desc="Print the finest models at the cheapest prices. With the state-of-the-art bambu lab printers, we can get your prints ready fast. Guaranteed one day delivery to RV students!" 
-                    imageUrl="src/images/3dprintingbg.jpg" // Update with actual image path
-                    onHover={handleMouseEnter}
-                    onMouseLeave={handleMouseLeave}
+                    videoUrl="src/images/3dprinting.mp4" // Update with actual image path
+      
                 />
                 <Block 
                     heading="BUSINESS CARDS" 
                     desc="Enhance your brand with distinctive 3D business cards, leaving a lasting impression with innovative designs and vibrant colors for networking and events." 
-                    imageUrl="/path/to/business-cards.jpg" // Update with actual image path
-                    onHover={handleMouseEnter}
-                    onMouseLeave={handleMouseLeave}
+                    videoUrl="/path/to/business-cards.jpg" // Update with actual image path
+                 
                 />
                 <Block 
                     heading="SERVICE N" 
                     desc="Description about service N. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus." 
-                    imageUrl="src/components/Services/components/img.jpg" // Update with actual image path
-                    onHover={handleMouseEnter}
-                    onMouseLeave={handleMouseLeave}
+                    videoUrl="src/components/Services/components/img.jpg" // Update with actual image path
+             
                 />
             </div>
         </div>
