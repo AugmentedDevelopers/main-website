@@ -19,7 +19,7 @@ let ContactUs = () => {
                 display: 'flex',
                 flexDirection: 'column',
                 border: 'solid 1px rgba(255,255,255,0.05)',
-                background: 'rgba(255,255,255,0.03)',
+                background: 'rgba(10,10,10)',
                 alignItems: 'center',
                 justifyContent: 'center',
                 color: 'white',
@@ -43,19 +43,20 @@ let ContactUs = () => {
                         img={whatsapp} 
                         text="Whatsapp" 
                         buttonText="Text us!" 
-                        action={() => {}} 
-                    />
+                        action={() => window.open('https://wa.me/8217684886', '_blank')} 
+                    />  
                     <ContactBlock 
                         img={email} 
                         text="Mail" 
                         buttonText="Mail us!" 
-                        action={() => {}} 
+                        action={() => window.location.href = 'mailto:augmentedlabs.teams@gmail.com'} 
                     />
+
                     <ContactBlock 
-                        img={phone} 
-                        text="Phone" 
-                        buttonText="Call Us!" 
-                        action={() => {}} 
+                    img={phone} 
+                    text="Phone" 
+                    buttonText="Call Us!" 
+                    action={() => window.location.href = 'tel:9482465825'} 
                     />
                 </div>
             </div>

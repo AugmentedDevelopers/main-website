@@ -18,13 +18,14 @@ import ControlHub from './images/controllHub.jpg';
 import Circuit from './images/circuit.jpeg';
 
 const BlogPost = () => {
+    
     return (
         <div className="container w-11/12 lg:w-3/4" style={{color:'white',marginTop:'6em'}}>
             <div className="alignImage flex flex-col-reverse lg:flex-row" >
                 <div className="heading-container">
                     <h1 style={{fontSize:'1.8em',marginTop:'1.5em',marginBottom:'0.5em',fontWeight:'bold',color:'white'}}>Filament Recycler Under 100 Dollars</h1>
 
-                    <p>August 29, 2024 | By Augmented Labs</p>
+                    <p>October 15, 2024 | By Vineeth, Shreevathsa, Saathwika and Vijesh </p><br/>
 
                     <nav>
                         <ul>

@@ -5,7 +5,7 @@ import { Link,Outlet } from 'react-router-dom';
 const Navbar = ({ isOpen, setIsOpen, setPage}) => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-20 flex justify-between lg:justify-start px-6 lg:pr-12 pt-3 pb-3 bg-gray-200 shadow-md">
-      <div className="lg:w-1/4 text-2xl font-bold font-dancing hover:animate-float cursor-pointer">
+      <div className="lg:w-1/4 text-2xl font-bold font-dancing hover:animate-float cursor-pointer text-black">
         Augmented Labs
       </div>
       <HamburgerBtn setIsOpen={setIsOpen} isOpen={isOpen} />

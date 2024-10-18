@@ -3,7 +3,6 @@ import React from 'react';
 const About = () => {
     return (
         <div style={{
-            backgroundColor: '#000',
             color: '#fff',
             padding: '3em 1em',
             textAlign: 'center',
@@ -12,7 +11,9 @@ const About = () => {
             flexDirection: 'column',
             alignItems: 'center',
             marginTop:'25px',
-            padding:'2em'
+            padding:'2em',
+            width:'110%',
+            marginLeft:'-5%'
         }}>
         <h1 style={{ 
             width: '100%', // Ensure the title takes the full width of the container
@@ -25,8 +26,7 @@ const About = () => {
             About Us
         </h1>
             <p style={{ fontSize: '1.2em', maxWidth: '800px', marginBottom: '2em' }}>
-                At Augmented Labs, our mission is to merge the realms of imagination and technology to create cutting-edge products that enhance everyday life. We believe in the power of innovation, driven by a passion for technology and a commitment to excellence. Our goal is to empower people with the tools they need to build a better future.
-            </p>
+            Imagine a place that allows the wildest imaginations to be engineered at the fastest pace—that's Augmented Labs. Our aim is to bring cutting-edge technology to the masses in a way that has never been done before!</p>
             
             <div style={{
                 display: 'flex',
@@ -40,7 +40,6 @@ const About = () => {
                     display: 'flex',
                     flexDirection: 'column',
                     alignItems: 'center',
-                    width: '80%',
                     backgroundColor: '#111',
                     padding: '2em',
                     borderRadius: '1em',
@@ -50,15 +49,17 @@ const About = () => {
                     <img 
                         src="/src/components/About/images/founder.jpg" 
                         alt="Founder" 
-                        style={{ width: '150px',  borderRadius: '2%', marginBottom: '1em' }} 
+                        style={{ maxWidth: '400px',  borderRadius: '2%', marginBottom: '1em' }} 
                     />
-                    <h2 style={{ fontSize: '2em', marginBottom: '0.5em' }}>Founder Name</h2>
+                    <h2 style={{ fontSize: '2em', marginBottom: '0.5em' }}>Vineeth </h2>
                     <p style={{ fontSize: '1em', lineHeight: '1.6' }}>
-                        Our founder, [Name], started Augmented Labs with the vision to blend science fiction with reality. With years of experience in [industry], [Name] has spearheaded several innovative projects that have revolutionized the tech industry.
+                        Our founder, Vineeth Rao, started Augmented Labs with the vision to blend science fiction with reality. With years of experience in... lets cut the GPT content here.<br/><br/>
+                        Well let me introduce myself- I'm Vineeth Rao, The CEO, The CTO, The intern, The Janitor... I'm everything and everyone here. Augmented Labs is an outlet for me to showcase and make sense of the projects and how I make them. I love engineering and I engineer a LOT. But a LOT- A LOT more is left unexplored and untouched!!<br/><br/>
+                        Anyways, I'll always keep pushing out products over here, and you can help me out and Augmented Labs by criticizing them (and maybe purchasing them if you find them useful)!
                     </p>
                 </div>
 
-                <div style={{
+                {/* <div style={{
                     display: 'flex',
                     justifyContent: 'space-around',
                     width: '100%',
@@ -102,7 +103,7 @@ const About = () => {
                             [Name] is a [Role] at Augmented Labs, with a focus on [field]. [He/She/They] excel in [specific contributions] and have been instrumental in our success.
                         </p>
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     );

@@ -173,10 +173,10 @@ section h2 {
 #construction{
     
     background-color: #383838;
-    width:105%;
-    margin-left: -2.5%;
+    width:100%;
     margin-top: 5%;
     padding: 1rem;
+    border-radius: 0.5em;
 }
 
 /* Typography and spacing adjustments */
